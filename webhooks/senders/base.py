@@ -11,9 +11,6 @@ from standardjson import StandardJSONEncoder
 import requests
 
 
-logging.basicConfig(level=logging.DEBUG)
-
-
 class Senderable(object):
 
     def __init__(self, wrapped, dkwargs, hash_value, attempts, *args, **kwargs):
